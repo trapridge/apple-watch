@@ -5,10 +5,20 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Epic app-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchApp" customModuleProvider="target"/>
+                <controller title="Epic app" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchApp" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Epic Button" id="kXs-Q3-a6r">
+                            <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </button>
+                        <switch width="1" alignment="left" value="YES" title="Toggle" id="e6f-RM-zIJ"/>
+                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="nqo-ii-ryT"/>
+                        <label alignment="left" text="This is nice" id="w55-Fa-5Hh"/>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
