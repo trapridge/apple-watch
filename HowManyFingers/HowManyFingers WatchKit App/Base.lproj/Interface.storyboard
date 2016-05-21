@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HowManyFingers_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" alignment="left" textAlignment="center" id="puF-Jp-zHd"/>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="VtN-Q4-x7s">
+                            <items>
+                                <slider width="1" alignment="left" maximum="5" steps="5" id="arX-Sb-hdk">
+                                    <connections>
+                                        <action selector="fingerCountGuessAction:" destination="AgC-eL-Hgc" id="Ix7-bX-BIi"/>
+                                    </connections>
+                                </slider>
+                                <button width="1" alignment="left" title="Guess" id="ICj-cF-JlY">
+                                    <connections>
+                                        <action selector="guessAction" destination="AgC-eL-Hgc" id="8Or-bg-BqM"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="fingerCountGuessSlider" destination="arX-Sb-hdk" id="TTH-Kh-S9a"/>
+                        <outlet property="resultsLabel" destination="puF-Jp-zHd" id="zjC-ia-J4f"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-123" y="29"/>
+        </scene>
+    </scenes>
+</document>

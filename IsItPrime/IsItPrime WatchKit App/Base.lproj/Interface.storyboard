@@ -5,25 +5,13 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
-        <!--Epic app-->
+        <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller title="Epic app" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchApp" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="IsItPrime_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="left" title="Epic Button" id="kXs-Q3-a6r">
-                            <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
-                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <action selector="buttonPressed" destination="AgC-eL-Hgc" id="3SW-Q6-UPk"/>
-                            </connections>
-                        </button>
-                        <switch width="1" alignment="left" value="YES" title="Toggle" id="e6f-RM-zIJ"/>
-                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="nqo-ii-ryT"/>
-                        <label alignment="left" text="This is nice" id="w55-Fa-5Hh"/>
+                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="kU7-2v-GAY"/>
                     </items>
-                    <connections>
-                        <outlet property="nameLabel" destination="w55-Fa-5Hh" id="KFA-fk-Hc8"/>
-                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
@@ -47,7 +35,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="WatchApp" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="IsItPrime_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
