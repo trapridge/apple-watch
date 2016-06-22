@@ -10,8 +10,17 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="IsItPrime_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="kU7-2v-GAY"/>
+                        <slider width="1" alignment="left" continuous="YES" maximum="1000" steps="1000" id="kU7-2v-GAY">
+                            <connections>
+                                <action selector="numberChanged:" destination="AgC-eL-Hgc" id="hOZ-4V-PeG"/>
+                            </connections>
+                        </slider>
+                        <label height="74.5" alignment="center" text="Label" textAlignment="center" numberOfLines="2" id="pdK-VD-ucn"/>
                     </items>
+                    <connections>
+                        <outlet property="primeLabel" destination="pdK-VD-ucn" id="mGK-Ka-1H7"/>
+                        <outlet property="slider" destination="kU7-2v-GAY" id="ntw-3g-FJr"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>

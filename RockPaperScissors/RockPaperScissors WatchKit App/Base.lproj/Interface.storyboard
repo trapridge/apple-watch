@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RockPaperScissors_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="You" id="8fe-Bk-rvX">
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <group width="1" alignment="left" id="fwU-gX-FIF">
+                            <items>
+                                <imageView width="50" height="50" alignment="left" image="fist_big" contentMode="scaleAspectFit" id="KFd-sA-8Ir"/>
+                                <imageView width="50" height="50" alignment="left" image="hand_big" contentMode="scaleAspectFit" id="Zbt-AT-2HB"/>
+                                <imageView width="50" height="50" alignment="left" image="fingers_big" contentMode="scaleAspectFit" id="HCd-UG-OU7"/>
+                            </items>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="KFd-sA-8Ir"/>
+                                    <exclude reference="Zbt-AT-2HB"/>
+                                    <exclude reference="HCd-UG-OU7"/>
+                                </mask>
+                            </variation>
+                            <variation key="device=watch42mm">
+                                <mask key="items">
+                                    <include reference="KFd-sA-8Ir"/>
+                                    <include reference="Zbt-AT-2HB"/>
+                                    <include reference="HCd-UG-OU7"/>
+                                </mask>
+                            </variation>
+                        </group>
+                        <label alignment="center" text="Computer" id="0CK-Sm-Xwk">
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <group width="1" alignment="left" id="piM-IG-fs4">
+                            <items>
+                                <imageView width="50" height="50" alignment="center" image="paper_small" id="WPM-xT-Ij6"/>
+                            </items>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="WPM-xT-Ij6"/>
+                                </mask>
+                            </variation>
+                            <variation key="device=watch42mm">
+                                <mask key="items">
+                                    <include reference="WPM-xT-Ij6"/>
+                                </mask>
+                            </variation>
+                        </group>
+                        <label alignment="center" text="Result" id="Cgu-4s-WcQ">
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="8fe-Bk-rvX"/>
+                            <exclude reference="fwU-gX-FIF"/>
+                            <exclude reference="0CK-Sm-Xwk"/>
+                            <exclude reference="piM-IG-fs4"/>
+                            <exclude reference="Cgu-4s-WcQ"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="8fe-Bk-rvX"/>
+                            <include reference="fwU-gX-FIF"/>
+                            <include reference="0CK-Sm-Xwk"/>
+                            <include reference="piM-IG-fs4"/>
+                            <include reference="Cgu-4s-WcQ"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="youPaper" destination="Zbt-AT-2HB" id="Xrs-eY-7yJ"/>
+                        <outlet property="youRock" destination="KFd-sA-8Ir" id="orq-cj-D6U"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="300.76923076923077" y="291.61538461538464"/>
+        </scene>
+    </scenes>
+</document>
